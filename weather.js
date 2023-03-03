@@ -9,7 +9,7 @@ weather_input.addEventListener('submit', function (e) {
 });
 
 async function updateWeather(city) {
-	cityOutput.innerHTML='<div class="spinner-border text-cg" role="status"></div>';;
+	cityOutput.innerHTML='<div id="preloader"><div id="loader"></div></div>';
 	tempOutput.innerHTML='';
 	let cityname = city;
 	const options_weather = {
